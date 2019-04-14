@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./001.css">
+    <script src="./001.js" type=""></script>
+    <style>
+        
+            
+            
+        
+        #content{
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            gap: 10px 10px;
+            grid-template-rows: repeat(3, 200px);
+            grid-template-columns: repeat(3, 1fr); 
+        }
+        .box{
+            background-color: #777;
+            padding: 30px;
+            text-align: center;
+            color: #fff;
+        }
+        .box-1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start:  1;
+            grid-row-end: 3;
+
+        }
+        .box-2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start:  1;
+            grid-row-end: 2;   
+
+        }
+        .box-3{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start:  2;
+            grid-row-end: 3;
+
+        }
+        .box-4{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start:  2;
+            grid-row-end: 4;   
+        }
+        .box-5{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start:  3;
+            grid-row-end: 4;     
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+    </div>
+</body>
+</html>
